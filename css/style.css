@@ -1,0 +1,657 @@
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+header {
+    border-bottom: 15px solid blue;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header button {
+    display: none;
+}
+
+header .logo {
+    position: relative;
+    bottom: -10px;
+    width: 25%;
+    height: auto;
+    padding-right: 5%;
+    margin-right: 5%;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .logo img.logo-d {
+    display: block;
+}
+
+header .logo img.logo-m {
+    display: none;
+}
+
+header .logo:after {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 50%;
+    background: #ccc;
+    content: "";
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+header ul li:first-child {
+    display: none;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+main .banner {
+    color: #fff;
+    padding: 150px 0;
+    background: url('./../img/acme-home.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+main .banner h1 {
+    margin-bottom: 30px;
+    font-size: 42px;
+}
+
+main .banner ul li {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+main .gray-bg {
+    padding: 50px 0;
+    background: #f2f2f2;
+}
+
+/* main .cards {
+    padding: 50px 0;
+    background: #ccc;
+} */
+
+main .gray-bg h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+main .gray-bg .wrapper > p {
+    margin-bottom: 20px;
+}
+
+.floater {
+    overflow: hidden;
+}
+
+.floater li {
+    float: left;
+    width: 32%;
+}
+
+
+.floater li:not(:last-of-type) {
+    margin-right: 2%;
+}
+
+main .cards ul {
+    overflow: hidden;
+}
+
+main .cards ul li {
+    /* float: left;
+    width: 32%; */
+    box-sizing: border-box;
+    padding: 24px;
+    background: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+main .cards ul li .card-img {
+    margin-bottom: 10px;
+}
+
+main .cards ul li img {
+    width: 100%;
+}
+
+main .cards ul li.blue {
+    border-bottom: 5px solid blue;
+    color: blue;
+}
+
+main .cards ul li.green {
+    border-bottom: 5px solid green;
+    color: green;
+}
+
+main .cards ul li.light {
+    border-bottom: 5px solid skyblue;
+    color: skyblue;
+}
+
+/* main .cards ul li:not(:last-of-type) {
+    margin-right: 2%;
+} */
+
+main .dialog {
+    background: url('./../img/background.jpg') center center no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 80px;
+}
+
+main .dialog h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+main .dialog h2 + p {
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+main .dialog .button {
+    width: 150px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+
+main .dialog .button a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+main .event li {
+    color: #fff;
+    position: relative;
+    /* border-top: 20px solid transparent;
+    background: blue; */
+}
+
+main .event li .blue-box:after {
+    display: block;
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    content: "";
+}
+
+/* main .event li .blue-box:before {
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(darkblue, transparent);
+} */
+
+main .event li .blue-box:after {
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(transparent, darkblue);
+}
+
+main .event li .date {
+    position: absolute;
+    padding: 10px;
+    left: 25px;
+    background: darkblue;
+    width: 50px;
+    text-align: center;
+}
+
+main .event li .date:before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    border-width: 10px;
+    border-color: transparent lightblue lightblue transparent;
+    border-style: solid;
+    content: "";
+}
+
+main .event li .date span {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+main .event li .blue-box {
+    background: blue;
+    margin-top: 20px;
+    padding: 60px 20px 100px;
+}
+
+main .event li .text-box {
+    /* position: relative;
+    z-index: 9; */
+}
+
+main .event li .place {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    padding: 10px 0;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    background: #f2f2f2;
+    z-index: 2;
+}
+
+main .event li h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main .event li .place:before {
+    display: block;
+    position: absolute;
+    content: "";
+    left: -40px;
+    top: 0;
+    border-width: 20px;
+    border-color: transparent #f2f2f2 #f2f2f2 transparent;
+    border-style: solid;
+}
+
+main .event li .button a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    color: #fff;
+    padding: 30px 0 50px;
+    background: #808080;
+}
+
+footer .footer-desktop {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-mobile {
+    display: none;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+}
+
+footer ul li {
+    /* float: left; */
+    margin-right: 5px;
+}
+
+footer .footer-desktop ul li:not(:first-of-type) {
+    background: #000;
+    color: #808080;
+    border-radius: 50%;
+    width: 28px;
+    display: flex;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-desktop ul li:not(:first-of-type):hover {
+    background: #fff;
+    color: #808080;
+}
+
+@media screen and (max-width: 1299px) {
+    .wrapper {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .banner {
+        padding: 50px 0;
+    }
+    
+    main .banner h1 {
+        font-size: 30px;
+    }
+    
+    main .banner h1 span {
+        font-size: 20px;
+    }
+
+    main .banner ul li {
+        font-size: 16px;
+    }
+
+    main .gray-bg {
+        padding: 30px 0;
+    }
+
+    main .gray-bg h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    main .gray-bg .wrapper > p {
+        margin-bottom: 14px;
+    }
+
+    main .cards ul li {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    main .dialog {
+        padding: 50px 0;
+    }
+
+    main .dialog h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    main .dialog h2 + p {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    main .dialog .button a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    main .event li .blue-box {
+        padding: 50px 20px 80px;
+    }
+
+    main .event li .date {
+        width: 30px;
+        font-size: 12px;
+    }
+
+    main .event li .date span {
+        font-size: 20px;
+    }
+    
+    main .event li h3 {
+        font-size: 18px;
+    }
+    
+    main .event li .description {
+        font-size: 14px;
+    }
+
+    main .event li .button a {
+        margin-top: 20px;
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+    
+    main .event li .place {
+        font-size: 14px;
+    }
+
+    
+    .slick-slide {
+        transform: scale(1);
+    }
+
+    .slick-slide:not(.slick-active) {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main .event li .place {
+        font-size: 12px;
+    }
+
+    footer .footer-desktop {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .logo {
+        bottom: -5px;
+        padding-right: 3%;
+        margin-right: 3%;
+    }
+
+    header ul {
+        padding-bottom: 10px;
+    }
+
+    header ul li {
+        font-size: 12px;
+    }
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .openDropDown {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    header {
+        border-bottom: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        background: #ccc;
+    }
+    
+    .openDropDown:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #000;
+        opacity: .5;
+        z-index: 2;
+        content: "";
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .fa-times {
+        display: none;
+    }
+    
+    .openDropDown header .fa-bars {
+        display: none;
+    }
+
+    .openDropDown header .fa-times {
+        display: block;
+    }
+
+    header button {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    header .wrapper {
+        padding: 0;
+    }
+
+    header .logo {
+        position: relative;
+        bottom: auto;
+        width: 150px;
+        height: auto;
+        padding-right: 0;
+        margin: 5px auto;
+    }
+
+    header .logo:after {
+        display: none;
+    }
+    
+    header .logo img.logo-d {
+        display: none;
+    }
+
+    header .logo img.logo-m {
+        display: block;
+    }
+
+    header ul {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        background: #fff;
+        border-top: 1px solid #ccc;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    header ul li {
+        text-align: center;
+    }
+
+    header ul li:first-child {
+        display: block;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000;
+        color: blue;
+    }
+
+    header ul li a {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #ccc;
+    }
+
+    main {
+        padding-top: 55px;
+    }
+
+    main .event li .place {
+        font-size: 12px;
+    }
+
+    main .event li .place {
+        bottom: -1px;
+        right: -1px;
+        width: 60%;
+        padding: 5px 0;
+    }
+
+    main .event li .place:before {
+        left: -39px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    footer .footer-desktop {
+        display: none;
+    }
+    
+    footer .footer-mobile {
+        display: block;
+    }
+
+    footer .footer-mobile ul {
+        display: block;
+    }
+
+    footer .footer-mobile ul li {
+        margin-right: 0;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        background: #fff;
+    }
+
+    footer .footer-mobile ul li a {
+        text-decoration: none;
+    }
+
+    footer .footer-mobile .policy-term {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .footer-mobile ul.policy-term li {
+        width: 49%;
+    }
+    
+    footer .footer-mobile ul.site-links li:first-child {
+        background: transparent;
+        font-weight: normal;
+    }
+}
